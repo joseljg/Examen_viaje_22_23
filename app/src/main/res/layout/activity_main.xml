@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/sp_ciudad"
+        android:layout_width="0dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/descripcion_spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_precio"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints="@string/precio_billete"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="@string/precio_billete"
+        android:inputType="numberDecimal"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sp_ciudad" />
+
+    <EditText
+        android:id="@+id/edt_cantidad_billetes"
+        android:layout_width="379dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints="@string/precio_billete"
+        android:ems="10"
+        android:hint="@string/cantidad_billetes"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/edt_precio"
+        app:layout_constraintStart_toStartOf="@+id/edt_precio"
+        app:layout_constraintTop_toBottomOf="@+id/edt_precio" />
+
+    <Button
+        android:id="@+id/bt_siguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/siguiente"
+        android:onClick="ir_a_pantalla2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_cantidad_billetes" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

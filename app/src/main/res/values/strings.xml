@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Examen_viaje_22_23</string>
+    <string name="descripcion_spinner">Elige una de las ciudades (madrid, barcelona o toledo)</string>
+    <string name="precio_billete">Precio Billete</string>
+    <string name="cantidad_billetes">Cantidad de billetes</string>
+    <string name="siguiente">Siguiente</string>
+</resources>
