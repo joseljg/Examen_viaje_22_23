@@ -13,5 +13,6 @@
     <string name="si">Si -> 2€ por billete</string>
     <string name="no">NO -> 0€</string>
     <string name="total_pagar">Total a pagar:</string>
-
+    <string name="saldo_disponible">Saldo Disponible:</string>
+    <string name="pagar">Pagar:</string>
 </resources>

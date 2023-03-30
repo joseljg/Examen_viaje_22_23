@@ -6,4 +6,64 @@
     android:layout_height="match_parent"
     tools:context=".Pantalla3Activity">
 
+    <EditText
+        android:id="@+id/edt_saldo_p3"
+        android:layout_width="175dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="end"
+        android:inputType="textPersonName"
+        android:text="@string/cero"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_saldo_p3"
+        app:layout_constraintStart_toEndOf="@+id/txt_saldo_p3"
+        app:layout_constraintTop_toTopOf="@+id/txt_saldo_p3" />
+
+    <TextView
+        android:id="@+id/txt_saldo_p3"
+        android:layout_width="128dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/saldo_disponible"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/txt_total_a_pagar_p3"
+        app:layout_constraintTop_toBottomOf="@+id/txt_total_a_pagar_p3" />
+
+    <EditText
+        android:id="@+id/edt_total_pagar_p3"
+        android:layout_width="175dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="18dp"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="end"
+        android:inputType="textPersonName"
+        android:text="@string/cero"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_total_a_pagar_p3"
+        app:layout_constraintStart_toEndOf="@+id/txt_total_a_pagar_p3" />
+
+    <TextView
+        android:id="@+id/txt_total_a_pagar_p3"
+        android:layout_width="126dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/total_pagar"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_pagar_p3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="64dp"
+        android:text="@string/pagar"
+        android:onClick="pagar_p3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_saldo_p3" />
 </androidx.constraintlayout.widget.ConstraintLayout>
