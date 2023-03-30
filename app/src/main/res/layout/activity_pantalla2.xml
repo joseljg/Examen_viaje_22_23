@@ -6,4 +6,155 @@
     android:layout_height="match_parent"
     tools:context=".Pantalla2Activity">
 
+    <EditText
+        android:id="@+id/edt_total_pagar_p2"
+        android:layout_width="96dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="28dp"
+        android:autofillHints="@string/cero"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="end"
+        android:inputType="textPersonName"
+        android:labelFor="@string/total"
+        android:text="@string/cero"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_total_pagar_p2"
+        app:layout_constraintStart_toEndOf="@+id/txt_total_pagar_p2"
+        app:layout_constraintTop_toTopOf="@+id/txt_total_pagar_p2" />
+
+    <TextView
+        android:id="@+id/txt_total_p2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/total"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_total_p2"
+        android:layout_width="190dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="44dp"
+        android:autofillHints="@string/cero"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="end"
+        android:inputType="textPersonName"
+        android:labelFor="@string/total"
+        android:text="@string/cero"
+        android:textSize="34sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_total_p2"
+        app:layout_constraintStart_toEndOf="@+id/txt_total_p2" />
+
+    <RadioGroup
+        android:id="@+id/rg_seguro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_descuento_p2">
+
+        <RadioButton
+            android:id="@+id/rb_seguro_si"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="calcular_seguro"
+            android:text="@string/si" />
+
+        <RadioButton
+            android:id="@+id/rb_seguro_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="calcular_seguro"
+            android:text="@string/no" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txt_descuento_p2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="118dp"
+        android:text="@string/descuento"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_total_p2" />
+
+    <EditText
+        android:id="@+id/edt_descuento_p2"
+        android:layout_width="190dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints="@string/cero"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="end"
+        android:inputType="textPersonName"
+        android:labelFor="@string/total"
+        android:text="@string/cero"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_descuento_p2" />
+
+    <TextView
+        android:id="@+id/txt_total_seguro_p2"
+        android:layout_width="125dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/total_seguro"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_seguro" />
+
+    <TextView
+        android:id="@+id/txt_total_pagar_p2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/total_pagar"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_seguro_p2" />
+
+    <EditText
+        android:id="@+id/edt_seguro_p2"
+        android:layout_width="190dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="24dp"
+        android:autofillHints="@string/cero"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="end"
+        android:inputType="textPersonName"
+        android:labelFor="@string/total"
+        android:text="@string/cero"
+        android:textSize="34sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_total_seguro_p2"
+        app:layout_constraintStart_toEndOf="@+id/txt_total_seguro_p2" />
+
+    <Button
+        android:id="@+id/bt_siguiente_p2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/siguiente"
+        android:onClick="ir_a_pantalla3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

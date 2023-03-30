@@ -13,6 +13,8 @@ import android.widget.Spinner;
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
 
     public static final String EXTRA_TOTAL = "es.joseljg.examen_viaje_22_23.mainactivity.total";
+    public static final String EXTRA_CANTIDAD ="es.joseljg.examen_viaje_22_23.mainactivity.cantidad" ;
+    public static final String EXTRA_PRECIO = "es.joseljg.examen_viaje_22_23.mainactivity.precio" ; ;
     private Spinner sp_ciudad = null;
     private EditText edt_precio = null;
     private EditText edt_cantidad_billetes = null;
@@ -81,6 +83,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         total = precioCiudad * cantidad_billetes;
         Intent intent = new Intent(this, Pantalla2Activity.class);
         intent.putExtra(EXTRA_TOTAL,total);
+        intent.putExtra(EXTRA_CANTIDAD, cantidad_billetes);
+        intent.putExtra(EXTRA_PRECIO, precioCiudad);
         startActivity(intent);
     }
 }

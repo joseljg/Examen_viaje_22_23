@@ -4,4 +4,14 @@
     <string name="precio_billete">Precio Billete</string>
     <string name="cantidad_billetes">Cantidad de billetes</string>
     <string name="siguiente">Siguiente</string>
+    <string name="total">Total</string>
+    <string name="total_seguro">Seguro:</string>
+    <string name="preciototal">Precio Total</string>
+    <string name="cero">0.0</string>
+    <string name="descuento">Descuento Grupal</string>
+    <string name="seguro">Seguro</string>
+    <string name="si">Si -> 2€ por billete</string>
+    <string name="no">NO -> 0€</string>
+    <string name="total_pagar">Total a pagar:</string>
+
 </resources>
